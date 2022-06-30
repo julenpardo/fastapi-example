@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fastapi
+  namespace: fastapi
+  labels:
+    app: fastapi
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: fastapi
+  template:
+    metadata:
+      labels:
+        app: fastapi
+    spec:
+      containers:
+        - args:
+            - bash
+          image: fastapi-example:0.0.1
+          name: fastapi
+          ports:
+            - containerPort: 8000
+          resources: {}
+          command: ["python", "/srv/server.py"]
+          imagePullPolicy: Never
+      restartPolicy: Always
+status: {}
