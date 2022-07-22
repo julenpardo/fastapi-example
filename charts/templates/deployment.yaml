@@ -18,12 +18,12 @@ spec:
       containers:
         - args:
             - bash
-          image: fastapi-example:0.0.1
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           name: fastapi
           ports:
             - containerPort: 8000
           resources: {}
           command: ["python", "/srv/server.py"]
-          imagePullPolicy: Never
+          imagePullPolicy: {{ .Values.image.pullPolicy  }}
       restartPolicy: Always
 status: {}
