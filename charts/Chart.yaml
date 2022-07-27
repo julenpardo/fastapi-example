@@ -4,9 +4,9 @@ description: A Helm chart for Kubernetes
 
 type: application
 
-version: "0.0.2-github.julenpardo.fastapi-example+bad4f257b69bb69915958cf07b276b549b8bc7bd"
+version: "0.0.3"
 
-appVersion: "0.0.2"
+appVersion: "0.0.3"
 annotations:
   repository: https://github.com/julenpardo/fastapi-example
   sha: bad4f257b69bb69915958cf07b276b549b8bc7bd
