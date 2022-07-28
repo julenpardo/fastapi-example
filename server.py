@@ -7,7 +7,7 @@ app = FastAPI()
 
 @app.get("/version")
 async def version():
-    return "0.0.3"
+    return "0.0.4"
 
 
 if __name__ == '__main__':
