@@ -1,12 +1,16 @@
 apiVersion: v2
-name: chart
+name: FastAPI example
 description: A Helm chart for Kubernetes
 
 type: application
 
-version: "0.1.1"
+version: "1.0.0"
 
-appVersion: "0.1.0"
+appVersion: "0.2.0"
+
 annotations:
-  repository: https://github.com/julenpardo/fastapi-example
-  sha: bad4f257b69bb69915958cf07b276b549b8bc7bd
+    env: dev
+    commit_sha: eb93c4033dc402de9d97c3d345c6ef1bce7d125f
+    repo_host: https://github.com
+    repo_owner: julenpardo
+    repo_name: fastapi-exapmle

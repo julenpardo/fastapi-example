@@ -12,6 +12,10 @@ spec:
       app: fastapi
   template:
     metadata:
+      {{- with .Chart.Annotations }}
+      annotations:
+          {{- toYaml . | nindent 8 }}
+      {{- end }}
       labels:
         app: fastapi
     spec:
