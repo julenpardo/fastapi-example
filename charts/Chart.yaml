@@ -9,8 +9,7 @@ version: "1.1.6"
 appVersion: "0.2.0"
 
 annotations:
-    env: dev
+    environment: development
     commit_sha: eb93c4033dc402de9d97c3d345c6ef1bce7d125f
-    repo_host: https://github.com
     repo_owner: julenpardo
     repo_name: fastapi-exapmle
