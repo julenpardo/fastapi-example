@@ -4,12 +4,10 @@ description: A Helm chart for Kubernetes
 
 type: application
 
-version: "1.1.6"
+version: "1.1.7"
 
-appVersion: "0.2.0"
+appVersion: "0.2.1"
 
 annotations:
-    environment: development
-    commit_sha: eb93c4033dc402de9d97c3d345c6ef1bce7d125f
-    repo_owner: julenpardo
-    repo_name: fastapi-exapmle
+    datarobot.com/commit_sha: aaaaaaa
+    datarobot.com/repository_full_name: julenpardo/fast-api-example

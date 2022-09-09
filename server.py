@@ -8,7 +8,7 @@ app = FastAPI()
 
 @app.get("/version")
 async def version():
-    return "0.2.0"
+    return "0.2.1"
 
 
 @app.post("/flux-hook")

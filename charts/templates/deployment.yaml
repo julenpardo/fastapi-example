@@ -5,10 +5,6 @@ metadata:
   namespace: fastapi
   labels:
     app: fastapi
-  {{- with .Chart.Annotations }}
-  annotations:
-      {{- toYaml . | nindent 4 }}
-  {{- end }}
 spec:
   replicas: 1
   selector:
@@ -18,6 +14,10 @@ spec:
     metadata:
       labels:
         app: fastapi
+      {{- with .Chart.Annotations }}
+      annotations:
+          {{- toYaml . | nindent 8 }}
+      {{- end }}
     spec:
       containers:
         - args:
