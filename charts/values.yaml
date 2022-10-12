@@ -5,3 +5,7 @@ image:
   pullPolicy: Never
   # Overrides the image tag whose default is the chart appVersion.
   tag: "0.2.1"
+
+annotations:
+  datarobot.com/commit_sha: 11.10.2022
+  datarobot.com/repository_full_name: julenpardo/fast-api-example
